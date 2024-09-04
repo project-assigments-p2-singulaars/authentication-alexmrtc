@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        @if(isLoggedIn){
+            <a (click)="logoutUser()">Logout</a>
+        } @else{
+            <a routerLink="/login">Login</a>
+        }
+        <a [routerLink]="['/profile', id]">Profile</a>
+    </nav>
+</header>
+
+<main>
+    <p>home works!</p>
+</main>
